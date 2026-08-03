@@ -1,0 +1,56 @@
+.generalPartner {
+  background: url('@assets/generalPartner.webp') no-repeat center / cover;
+  padding-top: 90px;
+  height: 900px;
+  margin-top: 80px;
+}
+
+.generalPartnerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.generalPartnerContentMainTitle {
+  color: rgba(37, 37, 37, 1);
+  font-family: 'Forum';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.generalPartnerContentExtraTitle {
+  color: rgba(37, 37, 37, 1);
+  font-family: 'Berlingske Serif';
+  font-style: Italic;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1200px) {
+  .generalPartner {
+    height: 420px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+    background-position: center;
+  }
+
+  .generalPartnerContentMainTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .generalPartnerContentExtraTitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

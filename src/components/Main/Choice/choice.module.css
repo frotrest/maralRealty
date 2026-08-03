@@ -1,0 +1,243 @@
+.choiceBlock {
+  padding: 80px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.choiceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.choiceTitle {
+  font-family: 'Forum';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.optionGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.optionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.optionTagline {
+  font-family: 'Berlingske Serif';
+  font-style: Italic;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(78, 78, 78, 1);
+}
+
+.propertyPreview {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.propertyImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.grayscaleFilter {
+  filter: grayscale(100%);
+}
+
+.categoryBadge {
+  position: absolute;
+  top: -15px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'TT Firs Neue';
+  font-style: Medium;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.economyBadge {
+  box-shadow: inset 2px 2px 50px 0px rgba(224, 224, 224, 0.25);
+  background: var(
+    --Linear,
+    linear-gradient(180deg, rgba(241.19, 241.19, 241.19, 1) 0%, rgba(255, 255, 255, 1) 100%)
+  );
+  color: #555555;
+}
+
+.comfortBadge {
+  box-shadow: inset 2px 2px 50px 0px rgba(224, 224, 224, 0.25);
+  background:
+    url(), linear-gradient(180deg, rgba(242, 224, 169, 1) 0%, rgba(232, 205, 128, 1) 100%);
+  color: rgba(117, 101, 50, 1);
+}
+
+.tenantAvatars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tenantPortrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.grayscalePortrait {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.accentPortrait {
+  border: 2px solid #ebd08d;
+}
+
+.optionSummary {
+  font-family: 'TT Firs Neue';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 480px;
+}
+
+.summaryNote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(241.19, 241.19, 241.19, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 30px;
+  position: relative;
+}
+
+.alertMarker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgba(242, 224, 169, 1) 0%, rgba(232, 205, 128, 1) 100%);
+  color: #4a3d1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'TT Firs Neue', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+}
+
+.noteMessage {
+  color: rgba(99, 99, 99, 1);
+  font-family: 'TT Firs Neue';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  width: 960px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .choiceBlock {
+    padding: 50px 16px;
+  }
+
+  .choiceContainer {
+    gap: 30px;
+  }
+
+  .choiceTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .optionGrid {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 0px;
+  }
+
+  .optionCard {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .optionTagline {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .propertyImage {
+    height: 160px;
+  }
+
+  .categoryBadge {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .tenantPortrait {
+    width: 38px;
+    height: 38px;
+  }
+
+  .optionSummary {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .summaryNote {
+    padding: 25px 20px;
+    margin-top: 10px;
+  }
+
+  .alertMarker {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    top: -15px;
+  }
+
+  .noteMessage {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

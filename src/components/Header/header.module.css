@@ -1,0 +1,81 @@
+.header {
+  background: url('@assets/hero.webp') no-repeat center / cover;
+  padding-top: 50px;
+  padding-bottom: 220px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactBlock {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.contactBlockItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgba(37, 37, 37, 1);
+  font-family: 'TT Firs Neue';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-decoration: none;
+}
+
+.contactBlockItem::after {
+  content: 'Перезвоните мне';
+  color: rgba(79, 112, 174, 1);
+  font-family: 'TT Firs Neue';
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-decoration-line: underline;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.network:first-child {
+  box-shadow: inset 0px 0px 21px 0px rgba(255, 255, 255, 0.23);
+  background: linear-gradient(
+    180deg,
+    rgba(28.7, 190.02, 93.23, 1) 0%,
+    rgba(26.81, 145.39, 57.61, 1) 100%
+  );
+}
+
+.network:nth-child(2) {
+  box-shadow: inset 0px 0px 21px 0px rgba(255, 255, 255, 0.23);
+  background: linear-gradient(0deg, rgba(97, 137, 224, 1) 0%, rgba(125.41, 164.36, 244.2, 1) 100%);
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding-top: 35px;
+    padding-bottom: 490px;
+    background-image: url('@assets/mobile-hero.webp');
+  }
+  .contactBlockItem {
+    display: none;
+  }
+}

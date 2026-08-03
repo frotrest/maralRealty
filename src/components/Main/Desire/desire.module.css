@@ -1,0 +1,184 @@
+.desire {
+  position: relative;
+  width: 100%;
+  padding: 80px 20px 0;
+  box-sizing: border-box;
+  background: url('@assets/beach.webp') no-repeat center / cover;
+  overflow: hidden;
+}
+
+.headerDesire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerDesireSubTitle {
+  font-family: 'Berlingske Serif';
+  font-style: Italic;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+  color: #686868;
+}
+
+.headerDesireTitle {
+  color: #686868;
+  font-family: 'Forum';
+  font-style: Regular;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 1085px;
+}
+
+.desireBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 260px;
+  z-index: 2;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconBox {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #81a8ff 0%, #5e89f8 100%);
+  box-shadow: 0px 8px 18px rgba(94, 137, 248, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.iconBox svg {
+  width: 32px;
+  height: 32px;
+  stroke: #ffffff;
+}
+
+.badge {
+  position: absolute;
+  bottom: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #f8d153;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardText {
+  font-family: 'TT Firs Neue', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #686868;
+  margin: 0;
+}
+
+.desireHero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .desire {
+    padding-top: 45px;
+  }
+
+  .headerDesire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerDesireSubTitle {
+    font-family: 'Berlingske Serif';
+    font-style: Italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .headerDesireTitle {
+    font-family: 'Forum';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 5%;
+    width: 335px;
+    text-align: left;
+  }
+
+  .desireBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 25px;
+  }
+
+  .desireHeroImg {
+    order: 2;
+    width: 364px;
+    height: 396px;
+    object-fit: cover;
+  }
+
+  .column {
+    gap: 15px;
+    order: -1;
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .iconBox {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0px;
+  }
+
+  .iconBox svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .cardText {
+    font-family: 'TT Firs Neue';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    width: 215px;
+    text-align: left;
+  }
+}
